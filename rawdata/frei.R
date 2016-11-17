@@ -1,13 +1,12 @@
+## pristine from the package
 frei <- structure(list(
     time = c(1, 10, 22, 7, 3, 32, 12, 23, 8, 22,
              17, 6, 2, 16, 11, 34, 8, 32, 12, 25,
              2, 11, 5, 20, 4, 19, 15, 6, 8, 17, 23,
              35, 5, 6, 11, 13, 4, 9, 1, 6, 8, 10),
-
     status = c(1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1,
                0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1,
                1, 1, 1, 1, 0, 1, 0, 1, 0),
-
     treatment =  structure(c(2L, 1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L,
                              1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L,
                              1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L, 1L, 2L,
@@ -19,3 +18,8 @@ frei <- structure(list(
                19L, 20L, 20L, 21L, 21L)),
     .Names = c("time", "status", "treatment", "pair"), row.names = c(NA, -42L),
     class = "data.frame")
+
+## reverse
+frei$treatment <- relevel(frei$treatment, 'placebo')
+
+save("frei", file = "../data/frei.rda", compress = "bzip2")
