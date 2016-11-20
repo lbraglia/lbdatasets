@@ -1,0 +1,3 @@
+url <- "http://socserv.mcmaster.ca/jfox/Books/Companion/data/Rossi.txt"
+rossi <- read.table(url, header = TRUE)
+save("rossi", file = "../data/rossi.rda", compress = "bzip2")
