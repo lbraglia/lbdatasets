@@ -7,3 +7,4 @@ all: *.Rout
 
 mrosssample.Rout: mrosssample.R
 ovarian.Rout: ovarian.R
+piccolo_statdec.Rout: piccolo_statdec.R

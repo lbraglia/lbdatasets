@@ -38,4 +38,3 @@ classification.
 head(ovarian)
 }
 \keyword{datasets}
-

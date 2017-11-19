@@ -35,4 +35,3 @@ Gehan (1965) Biometrika 52:203-223.
 Freireich et al (1963) Blood 21(6):699-716.
 }
 \keyword{datasets}
-

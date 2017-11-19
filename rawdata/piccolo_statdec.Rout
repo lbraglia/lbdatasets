@@ -1,0 +1,22 @@
+> datasets <- c('camellia', 'compact', 'prezzolibri', 'produzione', 'studenti')
+> dbs <- lapply(datasets, function(x) read.table(paste0(x, ".txt"), header = TRUE))
+> Map(function(d, name){
++     if (name == 'prezzolibri') name <- 'libri'
++     save(d, file = sprintf("../data/%s.rda", name), compress = "bzip2")
++ },  dbs, datasets)
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+> 
