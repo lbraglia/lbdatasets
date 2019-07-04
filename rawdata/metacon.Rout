@@ -1,0 +1,17 @@
+> metacon<- read.csv(file = "metacon.csv", as.is = TRUE, header = TRUE)
+> names(metacon) <- lbmisc::preprocess_varnames(names(metacon))
+Reverse matrix is:
+
+matrix(c("study", "Study",
+"tm", "TM",
+"tsd", "TSD",
+"tn", "TN",
+"cm", "CM",
+"csd", "CSD",
+"cn", "CN"
+),
+ byrow = TRUE, ncol = 2,
+ dimnames = list(NULL, c('new', 'old')))
+
+> save("metacon", file = "../data/metacon.rda", compress = "bzip2")
+> 

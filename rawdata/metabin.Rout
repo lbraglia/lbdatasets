@@ -1,0 +1,17 @@
+> metabin <- read.csv(file = "metabin.csv", as.is = TRUE, header = TRUE)
+> names(metabin) <- lbmisc::preprocess_varnames(names(metabin))
+Reverse matrix is:
+
+matrix(c("study", "Study",
+"te", "TE",
+"tne", "TNE",
+"tn", "TN",
+"ce", "CE",
+"cne", "CNE",
+"cn", "CN"
+),
+ byrow = TRUE, ncol = 2,
+ dimnames = list(NULL, c('new', 'old')))
+
+> save("metabin", file = "../data/metabin.rda", compress = "bzip2")
+> 

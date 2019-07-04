@@ -1,0 +1,14 @@
+> metacor <- read.csv(file = "metacor.csv", as.is = TRUE,
++                     header = TRUE, dec = ',')
+> names(metacor) <- lbmisc::preprocess_varnames(names(metacor))
+Reverse matrix is:
+
+matrix(c("study", "study",
+"cor", "cor",
+"n", "n"
+),
+ byrow = TRUE, ncol = 2,
+ dimnames = list(NULL, c('new', 'old')))
+
+> save("metacor", file = "../data/metacor.rda", compress = "bzip2")
+> 

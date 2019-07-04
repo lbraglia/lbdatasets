@@ -1,0 +1,22 @@
+> metabcg <- read.csv(file = "metabcg.csv", as.is = TRUE,
++                     header = TRUE, dec = ',')
+> names(metabcg) <- lbmisc::preprocess_varnames(names(metabcg))
+Reverse matrix is:
+
+matrix(c("study_name", "Study.name",
+"treated_tb", "Treated.TB",
+"treated_total_n", "Treated.Total.N",
+"control_tb", "Control.TB",
+"control_total_n", "Control.Total.N",
+"risk_ratio", "Risk.ratio",
+"log_risk_ratio", "Log.risk.ratio",
+"std_err", "Std.Err",
+"variance", "Variance",
+"startyr", "startyr",
+"latitude", "latitude"
+),
+ byrow = TRUE, ncol = 2,
+ dimnames = list(NULL, c('new', 'old')))
+
+> save("metabcg", file = "../data/metabcg.rda", compress = "bzip2")
+> 
