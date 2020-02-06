@@ -3,7 +3,6 @@
 \docType{package}
 \name{lbdatasets}
 \alias{lbdatasets}
-\alias{lbdatasets-package}
 \title{lbdatasets.}
 \description{
 lbdatasets.

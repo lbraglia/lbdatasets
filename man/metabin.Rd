@@ -4,7 +4,17 @@
 \name{metabin}
 \alias{metabin}
 \title{METABIN data}
-\format{An object of class \code{data.frame} with 6 rows and 7 columns.}
+\format{A data.frame for metaanalysis of binary data (Book, table 14.4 pag
+93) \describe{
+    \item{study}{Study name}
+   \item{te}{treated: events}
+   \item{tne}{treated: non events}
+   \item{tn}{treated: total number of patients}
+   \item{ce}{controls: events}
+   \item{cne}{controls: non events}
+   \item{cn}{controls: total number of patients}
+
+}}
 \source{
 Borenstein et al. 2009 - Introduction to Meta-Analysis -
     Wiley, retrieved

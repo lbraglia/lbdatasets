@@ -2,7 +2,8 @@
 #' 
 #' metacon dataset.
 #' 
-#' @format A data.frame for metaanalysis of continuous data (Book, table 14.1 pag 93)
+#' @format A data.frame for metaanalysis of continuous data (Book, table 14.1
+#' pag 93): \describe{
 #'     \item{study}{Study name}
 #'    \item{tm}{treated: mean}
 #'    \item{tsd}{treated: standard deviation}
@@ -26,7 +27,7 @@
 #' metabin dataset.
 #' 
 #' @format A data.frame for metaanalysis of binary data (Book, table 14.4 pag
-#' 93)
+#' 93) \describe{
 #'     \item{study}{Study name}
 #'    \item{te}{treated: events}
 #'    \item{tne}{treated: non events}

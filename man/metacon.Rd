@@ -4,7 +4,17 @@
 \name{metacon}
 \alias{metacon}
 \title{METACON data}
-\format{An object of class \code{data.frame} with 6 rows and 7 columns.}
+\format{A data.frame for metaanalysis of continuous data (Book, table 14.1
+pag 93): \describe{
+    \item{study}{Study name}
+   \item{tm}{treated: mean}
+   \item{tsd}{treated: standard deviation}
+   \item{tn}{treated: total number of patients}
+   \item{cm}{controls: mean}
+   \item{csd}{controls: standard deviation}
+   \item{cn}{controls: total number of patients}
+
+}}
 \source{
 Borenstein et al. 2009 - Introduction to Meta-Analysis -
     Wiley, retrieved
